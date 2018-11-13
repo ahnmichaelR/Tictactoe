@@ -1,0 +1,28 @@
+1.) 
+Summary:
+The original code was housed in a single file with a few classes and methods and lacked modularity.
+Issue:
+Due to the design of being in a single file with a giant method, The complexity of this file could increase exponentially if developers wanted to added modules to the central controller. Also merging would be difficult if multiple developers wanted to add multiple changes.
+Fix:
+In order to improve modularity, the code was separated into several files(Model, View, Controller, and Adapter) as well as having separate methods for individual functions.
+2.) 
+Summary:
+The original code had all public variables.
+Issue:
+Because the variables are all public this leaves them open to end user manipulation.
+Fix:
+Changin class variables to private leads to good encapsulation and provides immutable objects.
+3.)
+Summary:
+The code was in a single class.
+Issue:
+Having the code lie in a single class makes it difficult to isolate individual issues as well as test different functions.
+Fix:
+In each file the code has been separated into a set of variables and methods that allow for easier testing of different parts of the code. 
+4.)
+Summary:
+In the original code there is no MVC architecture.
+Issue:
+The issue here is that the logic is all combined. The design does not support extensions such as different views, models or reading game moves from other sources. 
+Fix:
+Implementing the MVC architecture supports these specified modifications. 
